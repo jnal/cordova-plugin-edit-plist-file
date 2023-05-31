@@ -7,13 +7,10 @@
     <name>Edit Plist file</name>
     
     <description>
-        A cordova "plugin" that helps you indicate the modifications on the iOS's *-info.plist file.
-        So it avoids you to directly edit the *-info.plist file.
-        For example it is used to whitelist some schemes for ios9.
-        This plugin was initially created to avoid iOS 9 problems that prevent opening other apps from your own app because some used plugins aren't updated to take into consideration the new specification for iOS 9.
+        Modification of plist for alternative icons
     </description>
 
-    <author>Haythem OUEDERNI - haythem@nirbyapp.com </author>
+    <author>John Salamat</author>
 
     <keywords>cordova,whitelist,ios9,ecosystem:cordova,ordova-ios</keywords>
     
@@ -30,18 +27,32 @@
     <!-- ios -->
     <platform name="ios">
         
-        <!-- iOS9 whitelisting -->
-        <config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
-            <array>
-                <string>twitter</string>
-                <string>fb</string>
-                <string>whatsapp</string>
-                <string>itms-apps</string>
-                <string>youtube</string>
-                <string>soundcloud</string>
-                <string>fb-messenger</string>
-                <string>instagram</string>
-            </array>
+        <config-file target="*-Info.plist" parent="CFBundleIcons">
+            <dict>
+                    <key>CFBundleAlternateIcons</key>
+                    <dict>
+                        <!-- name which will be used for reference -->
+                        <key>light</key>
+                        <dict>
+                            <key>UIPrerenderedIcon</key>
+                            <true/>
+                            <key>CFBundleIconFiles</key>
+                            <array>
+                                <!-- actual file name of the icon -->
+                                <string>light</string>
+                            </array>
+                        </dict>
+                        <key>wild</key>
+                        <dict>
+                            <key>UIPrerenderedIcon</key>
+                            <true/>
+                            <key>CFBundleIconFiles</key>
+                            <array>
+                                <string>wild</string>
+                            </array>
+                        </dict>
+                    </dict>
+            </dict>
         </config-file>
         
         
