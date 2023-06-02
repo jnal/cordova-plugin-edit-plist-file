@@ -32,18 +32,19 @@
             <key>CFBundleAlternateIcons</key>
             <dict>
               <!-- The name you use in code -->
-              <key>wild</key>
+              <key>icon-phonegap</key>
               <dict>
                 <key>UIPrerenderedIcon</key>
                 <true/>
                 <key>CFBundleIconFiles</key>
                 <array>
                   <!-- The actual filenames. Don't list the @2x/@3x files here, and you can use just the biggest one if you like -->
-                  <string>www&#47;wild</string>
+                  <string>www/wild</string>
                 </array>
               </dict>
             </dict>
-        </config-file>
+          </dict>
+          </config-file>
         
         
         
