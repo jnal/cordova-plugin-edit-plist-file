@@ -39,7 +39,7 @@
                             <key>CFBundleIconFiles</key>
                             <array>
                                 <!-- actual file name of the icon -->
-                                <string>light</string>
+                                <string>www/light</string>
                             </array>
                         </dict>
                         <key>wild</key>
@@ -48,7 +48,7 @@
                             <true/>
                             <key>CFBundleIconFiles</key>
                             <array>
-                                <string>wild</string>
+                                <string>www/wild</string>
                             </array>
                         </dict>
                     </dict>
