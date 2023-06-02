@@ -32,7 +32,7 @@
             <key>CFBundleAlternateIcons</key>
             <dict>
               <!-- The name you use in code -->
-              <key>icon-phonegap</key>
+              <key>wild</key>
               <dict>
                 <key>UIPrerenderedIcon</key>
                 <true/>
